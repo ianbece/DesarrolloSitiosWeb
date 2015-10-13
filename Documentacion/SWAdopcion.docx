@@ -1,0 +1,23 @@
+Sitio Web de Adopción de Perros
+Funciones
+Este sitio web se lleva acabo para ayudar a perros que:
+-	No tienen un hogar. Consiguiéndoles una familia que le brinde cariño, cuidado, alimentación; una buena calidad de vida.
+-	Puedan estar en peligro. Ya sea por vivir en las calles o porque sean maltratados por sus “dueños”.
+Va dirigido a toda persona interesada en ayudar a los perros, adoptándolos o llevándolos a los refugios para que les den el cuidado que necesiten. También para las personas que no están conscientes de la maravillosa idea de adoptar en vez de comprar.
+Las personas que entren al sitio web podrán leer todo el contenido, pero también contestar el cuestionario de requisitos para adoptar, participar en el foro para hacer preguntas sobre sus dudas de los refugios, de cómo cuidar adecuadamente a su nuevo amigo, entre otras.
+
+Requisitos funcionales:
+Éstos definen las funciones que nuestro sitio web será capaz de realizar. Describen modificaciones que se harán sobre la información que entre a las páginas para producir las salidas. Entre los requisitos funcionales están:
+-	Administración de refugios. Se proporcionará la información necesaria acerca de los refugios disponibles donde se pueda adoptar o llevar un perro.
+
+-	Listar perros en adopción. Lista con imágenes de perros que necesitan un hogar. Se estará actualizando al dar de baja alguno o para añadir otros.
+
+-	Formularios de ingreso. Se guardará la información que las personas ingresen al interesarles algo sobre los refugios.
+
+Requisitos no funcionales:
+Tienen que ver con las características que de una u otra forma pueden limitar nuestro sitio web. Describen alguna restricción que limita nuestra elección en la construcción de la solución del problema de la gran cantidad de perros callejeros que existen.
+-	Fiabilidad. Tanto en la persona que desea adoptar, como en los refugios que puedan decirse ‘’seguros’’.
+
+-	Disponibilidad. En cuanto al tiempo de respuesta para las preguntas realizadas en el foro.
+
+-	Interfaz.
