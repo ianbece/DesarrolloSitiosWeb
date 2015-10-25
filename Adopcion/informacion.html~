@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0067)file:///C:/Users/Troy/AppData/Local/Temp/Rar$EXa0.344/contacto.html -->
+<!-- saved from url=(0070)file:///C:/Users/Troy/AppData/Local/Temp/Rar$EXa0.689/informacion.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Refugios</title>
@@ -32,26 +32,23 @@
 		<ul>
 			<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
 			<li><a href="informacion.html" accesskey="2" title="">Informacion</a></li>
-			<li><a href="adopcion.php" accesskey="3" title="">Adopcion</a></li>
+			<li><a href="adopcion.html" accesskey="3" title="">Adopcion</a></li>
 			<li><a href="consejos.html" accesskey="4" title="">Consejos</a></li>
 			<li><a href="foro.html" accesskey="5" title="">Foro</a></li>
 			<li><a href="contacto.html" accesskey="6" title="">Contacto</a></li>
 		</ul>
 	</div>
 	<div id="page">
-			
-			
-			<div id="sidebar-left" style="text-align:center; ">
-				<h2>Contacto</h2>
-				
-<p class="date"></p><h3><a>p.mayoruet@gmail.com</a></h3><a>Poulette Mayoral</a><p></p>
-				
-<p class="date"></p><h3><a>diana_love_ge95@hotmail.com</a></h3><a>Diana Guzmán</a><p></p>
-				
-<p class="date"></p><h3><a>rabiait@hotmail.com</a></h3><a>Ian Betancourt</a><p></p>
+		<div id="content-center">
+			<div>
+				<h2>Información</h2>
+				<p>En nuestro país se tiene la problemática de haber muchos perros callejerso que ya sea que nacen en la calle o son abandonados. Muchos de ellos se quedan sin hogar y terminan siendo sacrificados. Se propone suplir la compra de estos y como mejor opción fomentar la adopción, recopilando los refugios de perros callejeros listándolos con su respectiva ubicación y mostrando sus datos.</p>
+				<p>Este servicio solo se implementaria para aquellos refugios que no tienen un sitio web, y si lo tienen se haría publicidad de estos.
+				</p>
+				<p>Por último, habrá un apartado para dar en adopción en caso de haber encontrado un perro sin hogar y no querer conservarlo. Con esto hacemos que nuestro sitio sea el intermediario para dar en adopción responsablemente</p>
 			</div>
+		</div>
 		
-			<img src="images/puppi.jpg">
 	</div>
 	</div>
 </div>

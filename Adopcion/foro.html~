@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0067)file:///C:/Users/Troy/AppData/Local/Temp/Rar$EXa0.344/contacto.html -->
+<!-- saved from url=(0063)file:///C:/Users/Troy/AppData/Local/Temp/Rar$EXa0.775/foro.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Refugios</title>
@@ -32,26 +32,30 @@
 		<ul>
 			<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
 			<li><a href="informacion.html" accesskey="2" title="">Informacion</a></li>
-			<li><a href="adopcion.php" accesskey="3" title="">Adopcion</a></li>
+			<li><a href="adopcion.html" accesskey="3" title="">Adopcion</a></li>
 			<li><a href="consejos.html" accesskey="4" title="">Consejos</a></li>
 			<li><a href="foro.html" accesskey="5" title="">Foro</a></li>
 			<li><a href="contacto.html" accesskey="6" title="">Contacto</a></li>
 		</ul>
 	</div>
 	<div id="page">
-			
-			
-			<div id="sidebar-left" style="text-align:center; ">
-				<h2>Contacto</h2>
-				
-<p class="date"></p><h3><a>p.mayoruet@gmail.com</a></h3><a>Poulette Mayoral</a><p></p>
-				
-<p class="date"></p><h3><a>diana_love_ge95@hotmail.com</a></h3><a>Diana Guzmán</a><p></p>
-				
-<p class="date"></p><h3><a>rabiait@hotmail.com</a></h3><a>Ian Betancourt</a><p></p>
+		<div id="content-center">
+			<div id="content">
+				<div id="box2">
+					<p></p><h2>Foro</h2>
+					Aquí puedes dejar tus dudas o preguntas<p></p>
+					<p style="text-align: left">Ingresa el tu pregunta: <br><input type="text">
+					<br>Ingresa información adicional: <br><textarea rows="7" cols="50"></textarea></p>
+				</div>
 			</div>
+			<div id="sidebar-right">
+				<h2>Preguntas</h2>
+				<p class="date"></p><h3><a>¿La adopción tiene algún costo?</a></h3>No, ya que es ayudar a los refugios cuidando y llevando un nuevo miembro de la familia<p></p>
+				<p class="date"></p><h3><a>¿Cómo puedo saber si son confiables los refugios para llevar un perro?</a></h3>Los refuigos que mencionamos aquí son 100% confiables.<p></p>
+				<p class="date"></p><h3><a>Pregunta 3</a></h3>Esta es la respuesta de la pregunta 3<p></p>
+			</div>
+		</div>
 		
-			<img src="images/puppi.jpg">
 	</div>
 	</div>
 </div>
