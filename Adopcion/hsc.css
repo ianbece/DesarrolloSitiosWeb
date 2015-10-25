@@ -1,0 +1,28 @@
+table{
+border-radius: 20px;
+}
+
+div.imagen{
+width:400px;
+height:192px;
+align:center;
+}
+div.info{
+width:400px;
+height:192px;
+background-color:rgba(31, 31, 31, 0.8);
+visibility:hidden;
+color:white;
+text-align:center;
+}
+div.imagen:hover div.info{
+visibility:visible;
+}
+p.info{
+margin:0px;
+text-align:center;
+font-family:Arial;
+font-size: 0.805em;
+color:white;
+}
+

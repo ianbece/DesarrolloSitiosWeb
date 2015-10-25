@@ -6,8 +6,13 @@
 <meta name="description" content="">
 
 <link href="default.css" rel="stylesheet" type="text/css" media="all">
+<link href="slider.css" rel="stylesheet" type="text/css" media="all">
 
 <link rel="icon" type="image/ico" href="favicon.ico">
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="slider.js"></script>
+
 </head>
 <body>
 
@@ -24,7 +29,7 @@
 			<h1><a>Adopción de perros</a></h1>
 			<p>El hogar que necesitan</p>
 		</div>
-		<div id="banner"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></div>
+		<div id="banner"><a href="index.html"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></a></div>
 	</div>
 	
 
@@ -42,7 +47,19 @@
 	<div id="page">
 		<div id="content-center">
 			<div id="box1">
-				<img src="images/inicio.jpeg" width="500">
+				
+
+				<div id="slider">
+				  <a class="control_next">>></a>
+				  <a class="control_prev"><</a>
+				  <ul>
+				    <li><img src="images/inicio1.jpeg" width="500"></li>
+				    <li><img src="images/inicio2.jpg" width="500"></li>
+				    <li><img src="images/inicio3.jpg" width="500"></li>
+				    <li><img src="images/inicio4.jpeg" width="500"></li>
+				  </ul>  
+				</div>
+
 				<p>Página dedicada a buscar refugios a perros callejeros</p>
 			</div>
 		</div>
