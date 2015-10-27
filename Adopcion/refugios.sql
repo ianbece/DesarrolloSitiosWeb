@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 24-10-2015 a las 23:42:14
--- Versión del servidor: 5.5.44-0ubuntu0.14.04.1
+-- Tiempo de generación: 27-10-2015 a las 11:47:30
+-- Versión del servidor: 5.5.46-0ubuntu0.14.04.2
 -- Versión de PHP: 5.5.9-1ubuntu4.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -45,7 +45,17 @@ CREATE TABLE IF NOT EXISTS `perros` (
   `descripcion` varchar(100) NOT NULL,
   `imagen` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Volcado de datos para la tabla `perros`
+--
+
+INSERT INTO `perros` (`id`, `nombre`, `descripcion`, `imagen`) VALUES
+(1, 'Ruffus', 'Edad: 2 años\r\nTodas las vacunas', 'inicio1.jpeg'),
+(2, 'Spacky', 'Un perro amoroso que solo quiere ser feliz.', 'inicio2.jpg'),
+(3, 'Rocky', 'El solo quería jugar', 'inicio3.jpg'),
+(4, 'Susy', 'Valiente y audaz.', 'inicio4.jpeg');
 
 -- --------------------------------------------------------
 
@@ -61,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `refugios` (
   `link` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `link` (`link`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `refugios`
