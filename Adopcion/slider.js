@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
 	setInterval(function () {
         moveRight();
-    	}, 3000);
+    	}, 2000);
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
 	var slideHeight = $('#slider ul li').height();

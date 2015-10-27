@@ -10,7 +10,7 @@
 
 <link rel="icon" type="image/ico" href="favicon.ico">
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jquery.1.8.1.js"></script>
 <script src="slider.js"></script>
 
 </head>
@@ -29,14 +29,14 @@
 			<h1><a>Adopción de perros</a></h1>
 			<p>El hogar que necesitan</p>
 		</div>
-		<div id="banner"><a href="index.html"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></a></div>
+		<div id="banner"><a href="index.php"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></a></div>
 	</div>
 	
 
 
 	<div id="menu">
 		<ul>
-			<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
+			<li class="first"><a href="index.php" accesskey="1" title="">Inicio</a></li>
 			<li><a href="informacion.html" accesskey="2" title="">Informacion</a></li>
 			<li><a href="adopcion.php" accesskey="3" title="">Adopcion</a></li>
 			<li><a href="consejos.html" accesskey="4" title="">Consejos</a></li>
@@ -53,10 +53,33 @@
 				  <a class="control_next">>></a>
 				  <a class="control_prev"><</a>
 				  <ul>
-				    <li><img src="images/inicio1.jpeg" width="500"></li>
-				    <li><img src="images/inicio2.jpg" width="500"></li>
-				    <li><img src="images/inicio3.jpg" width="500"></li>
-				    <li><img src="images/inicio4.jpeg" width="500"></li>
+				    <?php
+					
+					include("includes/pdoConexion.php");
+					$linkDB = conexion();
+				
+
+					$salida = '';
+
+					try{
+					$sql = $linkDB->prepare('Select * from perros');
+					$sql->execute();
+
+					$resultado = $sql->fetchAll();
+					$cont = 0;
+					if(count($resultado) > 0)
+			    		foreach ($resultado as $listadoDK) 
+					{
+					$salida .='
+				    <li><div class="fondo" style="background-image:url(images/'.$listadoDK['imagen'].');"><div class="texto"><p>'.$listadoDK['nombre']." - ".$listadoDK['descripcion'].'</p></div></div></li>';
+					}
+					}
+					catch(PDOException $e){}
+					$linkDB = null;				
+					echo $salida;
+					
+				    ?>
+				 
 				  </ul>  
 				</div>
 

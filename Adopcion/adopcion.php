@@ -25,14 +25,14 @@
 			<h1><a>Adopción de perros</a></h1>
 			<p>El hogar que necesitan</p>
 		</div>
-		<div id="banner"><a href="index.html"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></a></div>
+		<div id="banner"><a href="index.php"><img src="images/logo.png" width="340" height="185" alt="" class="alignleft"></a></div>
 	</div>
 	
 
 
 	<div id="menu">
 		<ul>
-			<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
+			<li class="first"><a href="index.php" accesskey="1" title="">Inicio</a></li>
 			<li><a href="informacion.html" accesskey="2" title="">Informacion</a></li>
 			<li><a href="adopcion.php" accesskey="3" title="">Adopcion</a></li>
 			<li><a href="consejos.html" accesskey="4" title="">Consejos</a></li>
