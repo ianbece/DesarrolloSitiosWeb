@@ -34,7 +34,7 @@
 			<li><a href="informacion.html" accesskey="2" title="">Informacion</a></li>
 			<li><a href="adopcion.php" accesskey="3" title="">Adopcion</a></li>
 			<li><a href="consejos.html" accesskey="4" title="">Consejos</a></li>
-			<li><a href="foro.html" accesskey="5" title="">Foro</a></li>
+			<li><a href="foro.php" accesskey="5" title="">Foro</a></li>
 			<li><a href="contacto.html" accesskey="6" title="">Contacto</a></li>
 		</ul>
 	</div>
@@ -48,11 +48,36 @@
 					<br>Ingresa información adicional: <br><textarea rows="7" cols="50"></textarea></p>
 				</div>
 			</div>
-			<div id="sidebar-right">
+			<div id="sidebar-right" class="scroll">
 				<h2>Preguntas</h2>
-				<p class="date"></p><h3><a>¿La adopción tiene algún costo?</a></h3>No, ya que es ayudar a los refugios cuidando y llevando un nuevo miembro de la familia<p></p>
-				<p class="date"></p><h3><a>¿Cómo puedo saber si son confiables los refugios para llevar un perro?</a></h3>Los refuigos que mencionamos aquí son 100% confiables.<p></p>
-				<p class="date"></p><h3><a>Pregunta 3</a></h3>Esta es la respuesta de la pregunta 3<p></p>
+				
+				<?php 
+				include("includes/pdoConexion.php");
+				$linkDB = conexion();
+				
+
+				$salida = '';
+
+				try{
+				$sql = $linkDB->prepare('Select * from foro');
+			        $sql->execute();
+
+				$resultado = $sql->fetchAll();
+				$cont = 0;
+				if(count($resultado) > 0)
+			    		foreach ($resultado as $listadoDK) 
+					{
+						$salida.='<p class="date"></p><h3><a>'.$listadoDK['pregunta'].'</a></h3>'.$listadoDK['respuesta'].'<p></p>';
+					$cont++;
+			    		}
+
+				}
+
+				catch(PDOException $e){}
+				$linkDB = null;				
+				echo $salida;
+				?>
+				
 			</div>
 		</div>
 		

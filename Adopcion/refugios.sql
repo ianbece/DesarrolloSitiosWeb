@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-10-2015 a las 11:47:30
+-- Tiempo de generación: 29-10-2015 a las 13:41:56
 -- Versión del servidor: 5.5.46-0ubuntu0.14.04.2
 -- Versión de PHP: 5.5.9-1ubuntu4.13
 
@@ -31,7 +31,17 @@ CREATE TABLE IF NOT EXISTS `foro` (
   `pregunta` varchar(150) NOT NULL,
   `respuesta` varchar(150) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Volcado de datos para la tabla `foro`
+--
+
+INSERT INTO `foro` (`id`, `pregunta`, `respuesta`) VALUES
+(1, '¿La adopción tiene algún costo?', 'No, ya que es ayudar a los refugios cuidando y llevando un nuevo miembro de la familia'),
+(2, '¿Cómo puedo saber si son confiables los refugios para llevar un perro?', 'Los refugios que mencionamos aquí son 100% confiables.'),
+(3, '¿Hay algun limite de adopcion?', 'El único requisito es poder mantener a tu mascota en buenas condiciones'),
+(4, '¿Que pasa si ya no puedo mantener a mi mascota?', 'Debes ponerte en contacto con su refugio origen para llegar a un acuerdo');
 
 -- --------------------------------------------------------
 
@@ -71,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `refugios` (
   `link` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `link` (`link`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `refugios`
