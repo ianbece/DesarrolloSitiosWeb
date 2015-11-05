@@ -11,7 +11,7 @@ $mainDataBase = "refugios";
 
 $servidorBase = 'mysql:host='.$server.';dbname='.$mainDataBase;
 	try{
-	    $conn = new PDO($servidorBase, $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));   
+	    $conn = new PDO($servidorBase, $user, $pass,array(1002 => "SET NAMES utf8"));   
 	    
 	}
 	catch(PDOException $e){

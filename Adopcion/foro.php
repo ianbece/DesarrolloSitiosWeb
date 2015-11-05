@@ -7,6 +7,9 @@
 <meta name="description" content="">
 <link href="default.css" rel="stylesheet" type="text/css" media="all">
 <link rel="icon" type="image/ico" href="favicon.ico">
+
+<script type="text/javascript" src="jquery.1.8.1.js"></script>
+<script type="text/javascript" src="pregunta.js"></script>
 </head>
 <body>
 
@@ -42,10 +45,13 @@
 		<div id="content-center">
 			<div id="content">
 				<div id="box2">
+				<form action="" method="POST" id="formulario">
 					<p></p><h2>Foro</h2>
 					Aquí puedes dejar tus dudas o preguntas<p></p>
-					<p style="text-align: left">Ingresa el tu pregunta: <br><input type="text">
-					<br>Ingresa información adicional: <br><textarea rows="7" cols="50"></textarea></p>
+					<p style="text-align: left">Ingresa el tu pregunta: <br><input type="text" name="pregunta">
+					<br>Ingresa información adicional: <br><textarea rows="7" cols="50" name="adicional"></textarea></p>
+					<input type="submit" value="Enviar" id="boton">
+				</form>
 				</div>
 			</div>
 			<div id="sidebar-right" class="scroll">
@@ -70,7 +76,6 @@
 						$salida.='<p class="date"></p><h3><a>'.$listadoDK['pregunta'].'</a></h3>'.$listadoDK['respuesta'].'<p></p>';
 					$cont++;
 			    		}
-
 				}
 
 				catch(PDOException $e){}
